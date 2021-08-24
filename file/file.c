@@ -135,7 +135,7 @@ INT main(INT argc, CHAR *argv[])
         {
             break;
         }
-        p[1] = 0x00; // 获取当前目录.
+        p[1] = 0x00;
         strcat_s(LibPath, sizeof(LibPath), DEFMAGIC);
         cookie = magic_open(flags);
         magic_load(cookie, LibPath);
